@@ -1,11 +1,11 @@
 version: '2.2'
 services:
-  tileserver-gl-lite:
-    container_name: tileserver-gl-lite
+  tileserver-gl:
+    container_name: tileserver-gl
     build:
       context: ./
-      dockerfile: ./Dockerfile_light
+      dockerfile: ./Dockerfile
     environment:
       - NODE_ENV=production
     ports:
-      - 8085:8080
+      - 8085:80

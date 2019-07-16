@@ -1,6 +1,6 @@
-# TileServer GL - Lite
+# TileServer GL - Forked!
 
-Vector maps with GL styles. Map tile server for Mapbox GL JS.
+Vector and Raster maps with GL styles. Map tile server for Mapbox GL JS.
 
 ## Get Started
 
