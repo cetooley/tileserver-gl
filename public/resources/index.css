@@ -75,6 +75,7 @@ section {
   height: 191px;
   border: 1px solid #ededed;
   border-top:none;
+  position:relative;
 }
 .item:nth-child(odd) {
   background-color:#fbfbfb;
@@ -85,6 +86,7 @@ section {
   width: 128px;
   height: 128px;
   border: 1px solid #ccc;
+  left: 0px;
 }
 .details {
   float:left;
