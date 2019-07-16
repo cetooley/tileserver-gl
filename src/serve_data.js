@@ -29,8 +29,11 @@ module.exports = function(options, repo, params, id, styles, publicUrl) {
   var shrinkers = {};
 
   repo[id] = tileJSON;
-
-  var mbtilesFileStats = fs.statSync(mbtilesFile);
+  try {
+    var mbtilesFileStats = fs.statSync(mbtilesFile);
+  } catch (err) {
+    throw Error('File does not exist: ' + mbtilesFile);
+  }
   if (!mbtilesFileStats.isFile() || mbtilesFileStats.size == 0) {
     throw Error('Not valid MBTiles file: ' + mbtilesFile);
   }
